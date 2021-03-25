@@ -1,0 +1,133 @@
+.tweet {
+  opacity: 0.85;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &-header {
+    position: relative;
+
+    margin-top: -0.5em;
+    margin-right: -0.5em;
+    margin-left: -0.5em;
+
+    width: calc(100% + 1em);
+    height: 64px;
+
+    padding: 0.5em 0.5em 0.5em 0.5em;
+
+    border-radius: 4px 4px 0 0;
+    background-color: rgba($color-bg, 0.7);
+
+  }
+
+  &-avatar {
+
+    display: inline-block;
+
+    margin-right: 16px;
+
+    width: auto;
+    height: 100%;
+
+    border-radius: 50%;
+
+  }
+
+  &-username {
+
+    display: inline-block;
+
+    position: relative;
+    bottom: 8px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+
+  &-handle {
+
+    display: inline-block;
+
+    position: absolute;
+    top: 0px;
+    right: 8px;
+
+    line-height: 2rem;
+    font-size: 1rem;
+
+    color: $color-text;
+
+  }
+
+  &-text {
+
+    padding: 8px;
+
+    word-wrap: break-word;
+    font-size: 1.2em;
+
+    color: $color-text-dark;
+    background-color: rgba($color-bg-light, 0.7);
+
+  }
+
+  &-footer {
+
+    display: relative;
+
+    margin-right: -0.5em;
+    margin-left: -0.5em;
+    margin-bottom: -0.5em;
+
+    padding: 0.5em;
+
+    font-size: 90%;
+
+    background-color: rgba($color-bg, 0.7);
+
+  }
+
+  &-footer-img {
+
+    visibility: hidden;
+
+    &:hover {
+
+      height: 32px;
+      transform: translateY(-8px);
+
+    }
+
+  }
+
+  &:hover .tweet-footer-img {
+
+    visibility: visible;
+
+  }
+
+  &-award {
+
+    position: absolute;
+    right: 88px;
+
+  }
+
+  &-drink {
+
+    position: absolute;
+    right: 48px;
+
+  }
+
+  &-flag {
+
+    position: absolute;
+    right: 8px;
+
+  }
+
+}

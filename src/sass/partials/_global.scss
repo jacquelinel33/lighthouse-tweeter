@@ -1,0 +1,28 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-family: "IM Fell English", serif;
+}
+
+
+$responsive-width: 760px;
+
+$color-text: rgb(223,231,241);
+$color-text-dark: rgb(20, 26, 21);
+$color-bg: rgb(29, 38, 48);
+$color-bg-light: rgb(224, 230, 235);
+
+$color-error: rgb(255, 32, 32);
+
+$highlight: inset 0px 4px 8px -4px rgba(234, 255, 251, 0.5);
+$shadow: 2px 2px 1px 1px rgba(0,0,0,0.4);

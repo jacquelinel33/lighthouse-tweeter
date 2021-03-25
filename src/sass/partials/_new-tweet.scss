@@ -1,0 +1,100 @@
+.new-tweet {
+
+  transition: all 0.3s;
+  overflow: hidden;
+
+  &-closed {
+
+    opacity: 0;
+
+    margin-bottom: calc(-1rem + -3px);
+
+    font-size: 0;
+
+  }
+
+  &-username {
+
+    margin-top: 0;
+
+    border-bottom: 1px solid $color-text;
+
+    color: $color-text;
+
+  }
+
+  &-text {
+
+    display: block;
+
+    margin-bottom: 8px;
+    padding: 0.5em;
+
+    width: 100%;
+
+    resize: none;
+
+    color: $color-text-dark;
+    background-color: rgba($color-bg-light, 0.9);
+
+    box-shadow: inset $shadow;
+  }
+
+  &-submit {
+
+    margin-right: 8px;
+
+    background: rgba($color-bg-light, 0.8);
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.1em;
+
+    &:hover {
+      background: rgba($color-bg-light, 1);
+    }
+
+    &:active {
+      background: rgba($color-bg, 1);
+    }
+
+  }
+
+  &-validation {
+
+    display: none;
+
+    &-error {
+
+      display: inline-block;
+
+      position: absolute;
+      bottom: 8px;
+
+      color: $color-error;
+      font-style: italic;
+      font-weight: bold;
+
+    }
+
+  }
+
+  &-counter {
+
+    display: inline-block;
+    position: absolute;
+
+    right: 8px;
+    bottom: 8px;
+
+    &-invalid {
+
+      color: $color-error;
+      font-size: 110%;
+      font-style: italic;
+      font-weight: bold;
+
+    }
+
+  }
+
+}

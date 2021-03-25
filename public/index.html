@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
+=======
+  <head>
+    <!-- Meta Information -->
+    <title>Grogger</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400i" rel="stylesheet">
+>>>>>>> a92c9ff512e1fdb34b4a7bd15eca6f4ac7ea2df5
 
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -15,6 +26,7 @@
     rel="stylesheet">
     
     <!-- App CSS -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
@@ -28,8 +40,21 @@
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   <script type="text/javascript" src="/scripts/hover.js"></script>
+=======
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css" />
+
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/vendor/moment.min.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/app.js"></script>
+
+  </head>
+>>>>>>> a92c9ff512e1fdb34b4a7bd15eca6f4ac7ea2df5
 
 
+<<<<<<< HEAD
 </head>
 
 <body>
@@ -70,3 +95,38 @@
 </body>
 
 </html>
+=======
+    <!-- Top nav bar (fixed) -->
+    <nav class="nav-bar">
+      <img class="nav-bar-logo" src="/images/grog.png" alt="A mug of grog">
+      <span class="nav-bar-header">Grogger</span>
+      <button class="nav-bar-compose">Make a Toast</button>
+    </nav>
+
+    <!-- Page-specific (maisn) content here -->
+    <main class="content-area">
+
+      <section class="new-tweet container new-tweet-closed">
+        <h2 class="new-tweet-username">Make a Toast</h2>
+        <form class="new-tweet-form" method="POST" action="/tweets/">
+          <textarea class="new-tweet-text" name="text" placeholder="What be on yer mind, matey?"></textarea>
+          <input class="new-tweet-submit" type="submit" value="Raise Your Glass">
+          <span class="new-tweet-validation">?</span>
+          <span class="new-tweet-counter">140</span>
+        </form>
+      </section>
+
+      <div class="tweets-wrapper"></div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-tm"><span class="footer-tm-name">Grogger</span> is a registered trademARRRRRk of <span class="footer-tm-company">Stan's Previously Owned Websites LLC</span></div>
+      <img class="footer-man-1" src="/images/man-1.png" alt="A man of low moral fiber" title="A man of low moral fiber">
+      <img class="footer-man-2" src="/images/man-2.png" alt="A man of low moral fiber" title="A man of low moral fiber">
+      <img class="footer-man-3" src="/images/man-3.png" alt="A man of low moral fiber" title="A man of low moral fiber">
+    </footer>
+
+  </body>
+</html>
+>>>>>>> a92c9ff512e1fdb34b4a7bd15eca6f4ac7ea2df5

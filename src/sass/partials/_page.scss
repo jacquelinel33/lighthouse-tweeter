@@ -1,0 +1,53 @@
+@keyframes backgroundScroll {
+  0% { background-position:   50% 50%; }
+  25% { background-position:   0% 50%; }
+  50% { background-position:  50% 50%; }
+  75% { background-position:  100% 50%; }
+  100% { background-position: 50% 50%; }
+}
+
+body {
+  margin: 0;
+
+  color: $color-text;
+
+  background: url("/images/background.jpg") no-repeat;
+  background-size: auto 100%;
+  background-attachment: fixed;
+  animation: backgroundScroll 480s cubic-bezier(0.05, 0.01, .95, .99) infinite;
+
+}
+
+main {
+
+  width: 450px;
+
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 1em 2em 4em 2em;
+
+}
+
+@media only screen and (max-width: $responsive-width) {
+  main {
+    width: calc(300px + 20vw);
+  }
+}
+
+
+.container {
+
+  position: relative;
+
+  padding: 0.5em 0.5em 0.5em 0.5em;
+
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  border-radius: 4px;
+  background-color: rgba($color-bg, 0.9);
+  box-shadow: $highlight, $shadow;
+
+}

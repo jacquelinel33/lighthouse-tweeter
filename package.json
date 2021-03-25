@@ -6,7 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js"
+
+    "sass-compile": "./node_modules/.bin/node-sass src/sass --output public/styles",
+
+    "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js",
+    "live": "./node_modules/.bin/livereload ./public",
+    "sass": "./node_modules/.bin/node-sass --watch src/sass --output public/styles",
+
+    "dev": "./node_modules/.bin/parallelshell 'npm run local' 'npm run live' 'npm run sass'"
   },
   "author": "Lighthouse Labs",
   "license": "ISC",
@@ -14,9 +21,21 @@
     "body-parser": "^1.15.2",
     "chance": "^1.0.2",
     "express": "^4.13.4",
-    "md5": "^2.1.0"
+    "md5": "^2.1.0",
+    "mongodb": "^2.2.36",
+    "pirate-name-generator": "^1.0.0"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "nodemon": "latest"
+=======
+    "livereload": "^0.7.0",
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.9.2",
+    "parallelshell": "^3.0.2"
+  },
+  "engines": {
+    "node": "10.x"
+>>>>>>> a92c9ff512e1fdb34b4a7bd15eca6f4ac7ea2df5
   }
 }
